@@ -1,60 +1,50 @@
-# 🚀 Anomaly Detection
+# IHub_Reconciliation
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+# Reconciliation Application
 
----
+This is a full-stack application for reconciling financial data from CSV files, detecting anomalies, and integrating with Jira for anomaly reporting. It consists of a React frontend and a Flask backend.
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+## Overview
+- **Frontend:** A React-based UI for uploading CSV files and displaying reconciliation results in tabular format.
+- **Backend:** A Flask API that processes CSV uploads, performs reconciliation, detects anomalies, and creates Jira issues for anomalies in the Catalyst Reconciliation tab.
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+## Prerequisites
+- **Frontend:** Node.js (v16+), npm
+- **Backend:** Python 3.8+, pip
+- **Jira:** A Jira instance with API token for anomaly reporting (optional for IHub functionality).
 
-![Screenshot 1](link-to-image)
+## Installation
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   cd reconciliation-app
+   
+Frontend Setup:
+Navigate to the frontend directory (or src if flat structure).
+Install dependencies: npm install
+Start the app: npm start
+Backend Setup:
+Navigate to the reconciliation_app directory.
+Install dependencies: pip install Flask pandas transformers torch numpy requests
+Update config.py with Jira credentials.
+Start the server: python app.py
+Usage
+Run the Application:
+Backend: http://localhost:5000
+Frontend: http://localhost:3000
+Upload Files:
+IHub Reconciliation: Upload RealTime_Data.csv and Historical_Data.csv.
+Catalyst Reconciliation: Upload RealTime_Catalyst.csv and Historical_Catalyst.csv.
+View Results:
+Results and anomalies are displayed in the respective tabs.
+Anomalies in Catalyst tab trigger Jira issues (if configured).
+Documentation
+Frontend Documentation: Details the React components, structure, and usage.
+Backend Documentation: Describes the Flask API, file structure, anomaly detection, and Jira integration.
+Features
+File Upload: Supports CSV uploads with tab-specific validation.
+Reconciliation: Compares real-time and historical data for IHub and Catalyst.
+Anomaly Detection: Flags outliers based on historical trends.
+Jira Integration: Creates issues for Catalyst anomalies with detailed descriptions.
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
-
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
-
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
-
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
-
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
-
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
-
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+# END

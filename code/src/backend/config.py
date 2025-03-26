@@ -1,0 +1,5 @@
+JIRA_URL = 'https://newzalem.atlassian.net'
+JIRA_EMAIL = 'ENTER EMAIL'
+JIRA_API_TOKEN = 'Add Token'
+JIRA_PROJECT_KEY = 'KAN'
+JIRA_ISSUE_TYPE = 'Task'
