@@ -47,3 +47,10 @@ Reconciliation: Compares real-time and historical data for IHub and Catalyst.
 Anomaly Detection: Flags outliers based on historical trends.
 Jira Integration: Creates issues for Catalyst anomalies with detailed descriptions.
 # END
+
+**Team Name(pattern_prism)**
+👨‍💻 Moyeen Abdul
+👨‍💻 Srujith Chintala
+👨‍💻 Sateesh Battula
+👨‍💻 Satish Pandey
+👨‍💻 Minukuri Vijayender
